@@ -17,7 +17,6 @@ nocache('./index.js', module => console.log(`${module} telah di update !!`))
 
 const starts = async (Lexxy = new WAConnection()) => {
     Lexxy.logger.level = 'warn'
-    Lexxy.browserDescription = ["Lexxy Official", "safari", "windows 10"];
     Lexxy.version = [2, 2142, 12]
     Lexxy.on('qr', () => {
         console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan Qrnya Kak Waktu Cuma 20 Detik !!'))
